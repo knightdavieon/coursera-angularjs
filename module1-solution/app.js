@@ -1,14 +1,14 @@
 (function () {
 'use strict';
 
-angular.module('assignment1', [])
+angular.module('LunchCheck', [])
 
-.controller('lunchCheckerController', lunchCheckerController);
+.controller('LunchCheckController', LunchCheckController);
 
-lunchCheckerController.$inject = ['$scope'];
-function lunchCheckerController($scope){
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController($scope){
     $scope.lunch = "";
-    
+    $scope.message = "";
     
     $scope.checkLunch = function () {
         var lunch = $scope.lunch;
